@@ -1,3 +1,4 @@
-first,last = input("What's your name: ").split(" ")
+def total(galleons,sickles,knuts):
+    return ((galleons* 17+sickles)* 29+knuts)
 
-print(first)
+print(total(100,45,32),'knuts')
