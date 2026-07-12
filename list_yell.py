@@ -1,6 +1,5 @@
 def main():
     yell("Hi! this is me ")
-    yell(["I","am","Beautiful"])
 
 def yell(*words):
     uppercased=[word.upper() for word in words]
