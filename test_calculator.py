@@ -1,5 +1,6 @@
 from calcul import square
 
+
 def main():
     test_cal()
 
