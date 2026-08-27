@@ -35,7 +35,7 @@ try:
     with open("History.txt","r") as file:
         if option == "Y":
             print("------HISTORY------")
-            file.read().strip()
+            print(file.read().strip())
         else:
             sys.exit()
 
