@@ -12,9 +12,11 @@ try:
     
     def main():
         num_1,num_2,operator=takeinput()
-        option=input("Do you Wanna Change Numbers ? Y/N").lower()
+        option=input("Do you Wanna Change Numbers ? Y/N : ").lower()
         if option=="y":
-                takeinput()
+                print("Loading....")
+                time.sleep(1)
+                num_1,num_2,operator=takeinput()
         else:
                 pass
         print("Calculating.......")
@@ -24,7 +26,7 @@ try:
             case "+":
                 print(f"Addition = {num_1+num_2}")
             case "-":
-                print(f"Substration = {num_1-num_2}")
+                print(f"Subtration = {num_1-num_2}")
             case "*":
                 print(f"Multiplication = {num_1*num_2}")
             case "/":
@@ -61,3 +63,8 @@ except FileNotFoundError:
 
 if __name__=="__main__":
     main()
+
+
+for i in "Loading":
+    print(i,end="")
+    time.sleep(0.5)
