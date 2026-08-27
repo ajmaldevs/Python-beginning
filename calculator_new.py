@@ -61,10 +61,12 @@ except ZeroDivisionError:
 except FileNotFoundError:
     sys.exit("File Not Found")
 
+
+for i in "Program Executed Successfullyy.....":
+    print(i,end="")
+    time.sleep(0.25)
+
 if __name__=="__main__":
     main()
 
 
-for i in "Loading":
-    print(i,end="")
-    time.sleep(0.5)
