@@ -51,6 +51,10 @@ try:
                 print(file.read().strip())
             else:
                 sys.exit()
+        
+        for i in "Program Executed Successfullyy.....":
+            print(i,end="")
+            time.sleep(0.25)
 
 except ValueError:
     print("Value Error")
@@ -62,9 +66,6 @@ except FileNotFoundError:
     sys.exit("File Not Found")
 
 
-for i in "Program Executed Successfullyy.....":
-    print(i,end="")
-    time.sleep(0.25)
 
 if __name__=="__main__":
     main()
