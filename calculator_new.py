@@ -58,3 +58,6 @@ except ZeroDivisionError:
     sys.exit()
 except FileNotFoundError:
     sys.exit("File Not Found")
+
+if __name__=="__main__":
+    main()
