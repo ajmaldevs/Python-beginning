@@ -1,10 +1,11 @@
 import time
 import sys
-from datetime import date 
+from datetime import date
+
 try:
-    num_1=int(input("Enter a number: "))
-    num_2=int(input("Enter another number: "))
-    operator=input("Enter the operator: ")
+    num_1 = int(input("Enter a number: "))
+    num_2 = int(input("Enter another number: "))
+    operator = input("Enter the operator: ")
     print("Calculating.......")
     time.sleep(2)
     print("Result: ")
@@ -25,13 +26,13 @@ try:
             print(f"No Operator Entered....")
             sys.exit()
 
-    today=date.today()
+    today = date.today()
 
-    with open("History.txt","a") as file:
+    with open("History.txt", "a") as file:
         file.write(f"\n{today} : {num_1} {operator} {num_2}\n")
 
-        option=input("Do you wanna see history Y/N")
-        if option=="Y":
+        option = input("Do you wanna see history Y/N")
+        if option == "Y":
             file.read().strip()
         else:
             sys.exit()
@@ -44,9 +45,3 @@ except ZeroDivisionError:
     sys.exit()
 except FileNotFoundError:
     sys.exit("File Not Found")
-
-
-
-
-
-
