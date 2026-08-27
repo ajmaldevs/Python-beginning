@@ -29,8 +29,8 @@ match operator:
 today=date.today()
 
 with open("History.txt","a") as file:
-    file.write(f"{today} : {num_1} {operator} {num_2}")
-    
+    file.write(f"\n{today} : {num_1} {operator} {num_2}\n")
+
 
 
 
