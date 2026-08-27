@@ -31,7 +31,7 @@ try:
     with open("History.txt", "a") as file:
         file.write(f"\n{today} : {num_1} {operator} {num_2}\n")
 
-        option = input("Do you wanna see history Y/N")
+        option = input("Do you wanna see history Y/N: ")
         if option == "Y":
             file.read().strip()
         else:
