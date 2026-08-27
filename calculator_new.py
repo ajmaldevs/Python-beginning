@@ -61,8 +61,8 @@ try:
                 print("------HISTORY------")
                 print(file.read().strip())
                 print("------END----------")
-                
-            elif options == "C":
+
+            elif options == "c":
                 with open("History.txt","w") as file:
                     pass
 
