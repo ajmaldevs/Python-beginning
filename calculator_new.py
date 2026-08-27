@@ -1,4 +1,5 @@
 import time
+from datetime import date 
 try:
     num_1=int(input("Enter a number: "))
     num_2=int(input("Enter another number: "))
@@ -7,7 +8,7 @@ except ValueError:
     raise ValueError("Not expected Character")
 finally:
     print("Calculating.......")
-    time.sleep(5)
+    time.sleep(2)
     print("Result: ")
 match operator:
     case "+":
@@ -24,6 +25,12 @@ match operator:
         print(f"Floor Division = {num_1//num_2}")
     case _:
         print(f"No Operator Entered....")
+
+today=date.today()
+
+with open("History.txt","a") as file:
+    file.write(f"{today} : {num_1} {operator} {num_2}")
+    
 
 
 
