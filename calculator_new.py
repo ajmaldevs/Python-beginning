@@ -1,9 +1,10 @@
 import time
-from datetime import date 
+from datetime import date
+
 try:
-    num_1=int(input("Enter a number: "))
-    num_2=int(input("Enter another number: "))
-    operator=input("Enter the operator: ")
+    num_1 = int(input("Enter a number: "))
+    num_2 = int(input("Enter another number: "))
+    operator = input("Enter the operator: ")
 except ValueError:
     raise ValueError("Not expected Character")
 finally:
@@ -26,13 +27,7 @@ match operator:
     case _:
         print(f"No Operator Entered....")
 
-today=date.today()
+today = date.today()
 
-with open("History.txt","a") as file:
+with open("History.txt", "a") as file:
     file.write(f"\n{today} : {num_1} {operator} {num_2}\n")
-
-
-
-
-
-
