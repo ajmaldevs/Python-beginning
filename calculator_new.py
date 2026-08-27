@@ -3,33 +3,33 @@ import sys
 from datetime import date
 
 try:
-    #Function to take inputs
+    # Function to take inputs
     def takeinput():
         num_1 = int(input("Enter a number: "))
         num_2 = int(input("Enter another number: "))
-        operators=["+","-","*","/","**","//"]
+        operators = ["+", "-", "*", "/", "**", "//"]
         print(operators)
         operator = input("Enter the operator: ")
-        return num_1,num_2,operator
+        return num_1, num_2, operator
 
-    #Main Function
+    # Main Function
     def main():
-        num_1,num_2,operator=takeinput()
-        option=input("Do you Wanna Change Numbers ? Y/N : ").lower()
-        if option=="y":
-                print("Loading....")
-                time.sleep(1)
-                num_1,num_2,operator=takeinput()
+        num_1, num_2, operator = takeinput()
+        option = input("Do you Wanna Change Numbers ? Y/N : ").lower()
+        if option == "y":
+            print("Loading....")
+            time.sleep(1)
+            num_1, num_2, operator = takeinput()
         else:
-                pass
+            pass
         print("Calculating.......")
         time.sleep(2)
         print("Result: ")
-        calculate(num_1,num_2,operator)
-        history(num_1,num_2,operator)
+        calculate(num_1, num_2, operator)
+        history(num_1, num_2, operator)
 
-    #Function to calculate
-    def calculate(num_1,num_2,operator):
+    # Function to calculate
+    def calculate(num_1, num_2, operator):
         match operator:
             case "+":
                 print(f"Addition = {num_1+num_2}")
@@ -47,8 +47,8 @@ try:
                 print(f"No Operator Entered....")
                 sys.exit()
 
-    #Fuction used to Access and Write History
-    def history(num_1,num_2,operator):
+    # Fuction used to Access and Write History
+    def history(num_1, num_2, operator):
 
         today = date.today()
 
@@ -56,19 +56,18 @@ try:
             file.write(f"\n{today} : {num_1} {operator} {num_2}")
 
         options = input("Do you wanna see or clear history Y/N/C: ").lower()
-        with open("History.txt","r") as file:
+        with open("History.txt", "r") as file:
             if options == "y":
                 print("------HISTORY------")
                 print(file.read().strip())
                 print("------END----------")
 
             elif options == "c":
-                with open("History.txt","w") as file:
+                with open("History.txt", "w") as file:
                     pass
 
             else:
                 sys.exit()
-        
 
 except ValueError:
     print("Value Error")
@@ -80,8 +79,5 @@ except FileNotFoundError:
     sys.exit("File Not Found")
 
 
-
-if __name__=="__main__":
+if __name__ == "__main__":
     main()
-
-
