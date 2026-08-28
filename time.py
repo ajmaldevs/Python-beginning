@@ -31,19 +31,31 @@ def quality(wc,character,time_taken):
     typing_score=(wc*60+character)/time_taken
     return typing_score
 
+def body():
+        variable,time_taken=times()
+        count,wc=words(variable)
+        score=quality(wc,count,time_taken)
+    
+        print(f"✨ Number of Characters: {count}")
+        time.sleep(0.5)
+        print(f"🌐 Word Count: {wc}")
+        time.sleep(0.5)
+        print(f"⏱️ Time Taken :{time_taken:.2f} Seconds")
+        time.sleep(0.5)
+        print(f"🔖 Typing Score :{score:.2f}")
+
 def main():
     welcome()
-    variable,time_taken=times()
-    count,wc=words(variable)
-    score=quality(wc,count,time_taken)
+    choice=True
+    while choice:
+        body()
+        question=input("Do you Wanna Take Test Again Y/N : ").lower()
+        if question=="y":
+            choice=True
+        else:
+            choice=False
+    print("Program Ended Sucessfully...")
 
-    print(f"✨ Number of Characters: {count}")
-    time.sleep(0.5)
-    print(f"🌐 Word Count: {wc}")
-    time.sleep(0.5)
-    print(f"⏱️ Time Taken :{time_taken:.2f} Seconds")
-    time.sleep(0.5)
-    print(f"🔖 Typing Score :{score:.2f}")
 
 if __name__=="__main__":
     try:
