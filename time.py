@@ -1,4 +1,8 @@
 import time
+for i in "Hi..":
+    time.sleep(1)
+    print(i,end="")
+time.sleep(1)
 print("Welcome to Typing Speed Tester..........")
 time.sleep(2)
 print("beginning.....")
