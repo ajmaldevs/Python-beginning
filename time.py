@@ -11,6 +11,8 @@ def welcome():
 def times():
     start_time=time.time()
     variable=input("Enter the Sentence: ")
+    if variable =="":
+        raise ValueError
     end_time=time.time()
     time_taken=(end_time-start_time)
     return variable,time_taken
