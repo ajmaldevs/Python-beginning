@@ -2,9 +2,9 @@ import time
 welcome="Welcome to Typing Speed Tester.........."
 for char in welcome:
     print(char,end="",flush=True)
-    time.sleep(0.5)
+    time.sleep(0.125)
 time.sleep(1)
-print("beginning.....")
+print("\nbeginning.....")
 time.sleep(2)
 start_time=time.time()
 variable=input("Enter the Sentence: ")
