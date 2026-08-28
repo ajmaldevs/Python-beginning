@@ -2,7 +2,7 @@ import time
 import sys
 
 def welcome():
-    welcome="Welcome to ⌨️ Typing Speed Tester..........\n Beginning......\n 3 \n 2 \n 1 \n"
+    welcome="Welcome to ⌨️ Typing Speed Tester..........\n Beginning...... 3  2  1 \n"
     for char in welcome:
         print(char,end="",flush=True)
         time.sleep(0.125)
@@ -43,7 +43,7 @@ def main():
     time.sleep(0.5)
     print(f"⏱️ Time Taken :{time_taken:.2f} Seconds")
     time.sleep(0.5)
-    print(f"🔖 Typing Score :{score}")
+    print(f"🔖 Typing Score :{score:.2f}")
 
 if __name__=="__main__":
     try:
