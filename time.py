@@ -1,10 +1,9 @@
 import time
-for i in "Hi..":
-    print(i,end="",flush=True)
-    time.sleep(1)
+welcome="Welcome to Typing Speed Tester.........."
+for char in welcome:
+    print(char,end="",flush=True)
+    time.sleep(0.5)
 time.sleep(1)
-print("Welcome to Typing Speed Tester..........")
-time.sleep(2)
 print("beginning.....")
 time.sleep(2)
 start_time=time.time()
