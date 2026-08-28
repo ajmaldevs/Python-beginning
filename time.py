@@ -5,11 +5,17 @@ import pyttsx3
 engine=pyttsx3.init()
 
 def welcome():
-    welcome="Welcome to ⌨️  Typing Speed Tester..........\n"
+    welcome="Welcome to ⌨️  Typing Speed Tester..........\n Beginning......   3️⃣  2️⃣  1️⃣  \n"
     for char in welcome:
         print(char,end="",flush=True)
         time.sleep(0.125)
-    engine.say("Beginning  3 2 1")
+    engine.say("Beginning")
+    engine.runAndWait()
+    engine.say("3")
+    engine.runAndWait()
+    engine.say("2")
+    engine.runAndWait()
+    engine.say("1")
     engine.runAndWait()
     time.sleep(0.5)
 
