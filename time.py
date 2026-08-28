@@ -1,6 +1,6 @@
 import time
 for i in "Hi..":
-    print(i,end="")
+    print(i,end="",flush=True)
     time.sleep(1)
 time.sleep(1)
 print("Welcome to Typing Speed Tester..........")
