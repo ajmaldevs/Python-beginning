@@ -1,11 +1,16 @@
 import time
 import sys
+import pyttsx3
+
+engine=pyttsx3.init()
 
 def welcome():
-    welcome="Welcome to ⌨️  Typing Speed Tester..........\nBeginning......   3️⃣  2️⃣  1️⃣  \n"
+    welcome="Welcome to ⌨️  Typing Speed Tester..........\n"
     for char in welcome:
         print(char,end="",flush=True)
         time.sleep(0.125)
+    engine.say("Beginning  3 2 1")
+    engine.runAndWait()
     time.sleep(0.5)
 
 def times():
