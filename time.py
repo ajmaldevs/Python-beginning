@@ -54,7 +54,9 @@ def main():
             choice=True
         else:
             choice=False
+    time.sleep(1)
     print("Program Ended Sucessfully...")
+    time.sleep(0.25)
 
 
 if __name__=="__main__":
