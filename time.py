@@ -1,5 +1,6 @@
 import time
 print("Welcome to Typing Speed Tester..........")
+time.sleep(2)
 print("beginning.....")
 time.sleep(2)
 start_time=time.time()
@@ -15,8 +16,8 @@ for j in variable:
     if " " in j:
         wc=wc+1
 
-print(f"✨Number of Characters: {count}")
-time.sleep(0.25)
-print(f"🌐Word Count: {wc}")
-time.sleep(0.25)
-print(f"⏱️Time Taken :{time_taken:.2f} Seconds")
+print(f"✨ Number of Characters: {count}")
+time.sleep(0.5)
+print(f"🌐 Word Count: {wc}")
+time.sleep(0.5)
+print(f"⏱️ Time Taken :{time_taken:.2f} Seconds")
