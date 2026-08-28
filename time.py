@@ -2,11 +2,11 @@ import time
 import sys
 
 def welcome():
-    welcome="Welcome to ⌨️ Typing Speed Tester..........\n Beginning...... 3  2  1 \n"
+    welcome="Welcome to ⌨️  Typing Speed Tester..........\nBeginning...... 3  2  1 \n"
     for char in welcome:
         print(char,end="",flush=True)
         time.sleep(0.125)
-    time.sleep(2)
+    time.sleep(0.5)
 
 def times():
     start_time=time.time()
