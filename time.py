@@ -1,2 +1,6 @@
 import time
-print(time.time()*360)
+start_time=time.time()
+variable=input("Enter the Sentence: ")
+end_time=time.time()
+time_taken=end_time-start_time*60
+print(time_taken)
