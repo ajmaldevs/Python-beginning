@@ -9,10 +9,7 @@ def welcome():
     for char in welcome:
         print(char,end="",flush=True)
         time.sleep(0.125)
-    engine.say("Beginning")
-    engine.say("3")
-    engine.say("2")
-    engine.say("1")
+    engine.say("Start")
     engine.runAndWait()
     time.sleep(2)
 
