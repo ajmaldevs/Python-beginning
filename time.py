@@ -14,7 +14,7 @@ def welcome():
     engine.say("2")
     engine.say("1")
     engine.runAndWait()
-    time.sleep(1)
+    time.sleep(2)
 
 def times():
     start_time=time.time()
