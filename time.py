@@ -5,7 +5,7 @@ import pyttsx3
 engine=pyttsx3.init()
 
 def welcome():
-    welcome="Welcome to ⌨️  Typing Speed Tester..........\n Beginning......   3️⃣  2️⃣  1️⃣  \n"
+    welcome="Welcome to ⌨️  Typing Speed Tester..........\nBeginning......   3️⃣  2️⃣  1️⃣  \n"
     for char in welcome:
         print(char,end="",flush=True)
         time.sleep(0.125)
@@ -14,7 +14,7 @@ def welcome():
     engine.say("2")
     engine.say("1")
     engine.runAndWait()
-    time.sleep(0.5)
+    time.sleep(1)
 
 def times():
     start_time=time.time()
