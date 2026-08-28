@@ -12,7 +12,7 @@ for i in variable:
 
 wc=1
 for j in variable:
-    if " " in variable:
+    if " " in j:
         wc=wc+1
 
 print(f"✨Number of Characters: {count}")
