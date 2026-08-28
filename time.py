@@ -1,2 +1,2 @@
 import time
-print(time.time()*60)
+print(time.time()*360)
