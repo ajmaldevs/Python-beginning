@@ -1,2 +1,3 @@
 import cowsay
-print(dir(cowsay))
+name=input("Enter your name : ").title()
+cowsay.cow(name)
