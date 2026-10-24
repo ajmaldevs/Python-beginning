@@ -8,7 +8,7 @@ def main():
 
 def loop(n:int,name:str):
     for _ in range(n):
-        yield(name)
+        yield name
 
 if __name__=="__main__":
     main()
