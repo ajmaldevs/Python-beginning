@@ -1,5 +1,5 @@
 
-
+import sys
 def main():
     n:int=int(input("Enter a number: "))
     name:str=input("Enter a name: ")
@@ -12,6 +12,10 @@ def loop(n:int,name:str):
         yield name
 
 if __name__=="__main__":
-    main()
+    try:
+        main()
+    except ValueError:
+        sys.exit("ValueError")
+
     
 
