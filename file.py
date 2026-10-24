@@ -3,9 +3,22 @@ import sys
 def main():
     name:str=input("Enter your Name: ").title()
     n:int=int(input("Enter a number: "))
-    print(sys.argv[1])
+    fadd(name,n)
 
-#def fadd(name,n):
-#    with open 
+def fadd(name,n):
+    if sys.argv[1]:
+        with open(sys.argv[1],'a') as file:
+            file.write(f"Name = {name} Number = {n} ")
+    else:
+            with open("Data.txt",'a') as file:
+                file.write(f"Name = {name} Number = {n} ")
 
-main()
+if __name__=="__main__":
+    try:
+        main()
+    except ValueError:
+        sys.exit("you Entered a value wrong name:str number:int")
+    except IndexError:
+        sys.exit("You did not enter command line Argument")
+
+
