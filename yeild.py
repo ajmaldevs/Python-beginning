@@ -3,7 +3,8 @@
 def main():
     n:int=int(input("Enter a number: "))
     name:str=input("Enter a name: ")
-    print(loop(n,name))
+    res=loop(n,name)
+    print(res)
 
 
 def loop(n:int,name:str):
