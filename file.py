@@ -9,9 +9,6 @@ def fadd(name,n):
     if sys.argv[1]:
         with open(sys.argv[1],'a') as file:
             file.write(f"Name = {name} Number = {n} ")
-    else:
-            with open("Data.txt",'a') as file:
-                file.write(f"Name = {name} Number = {n} ")
 
 if __name__=="__main__":
     try:
