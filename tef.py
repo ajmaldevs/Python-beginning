@@ -1,6 +1,10 @@
 
 import sys
 def main():
+    """
+    this is just a function to take an integer,String,Floating point, list datatypes
+    and pass it to a function to print its types
+    """
     n:int=int(input("Enter a number: "))
     name:str=input("Enter a String: ")
     point:float=float(input("Enter a floating point: "))
