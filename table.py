@@ -6,4 +6,9 @@ name=[
      ]
 header=["Name","Rollno","Phone no"]
 
-print(tabulate(name,headers=header,tablefmt="html"))
+print(tabulate(name,headers=header,tablefmt="grid"))
+
+with open("table.html","w") as file:
+    file.write(tabulate(name,headers=header,tablefmt="html"))
+    print("Program Saved to table.html")
+    
