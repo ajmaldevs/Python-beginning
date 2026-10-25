@@ -1,3 +1,3 @@
 import os 
-a=os.system("ls")
+a=os.system("ipconfig")
 print(a)
