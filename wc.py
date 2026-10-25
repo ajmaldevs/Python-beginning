@@ -5,6 +5,6 @@ if folder.exists() and folder.is_dir():
     for file in folder.iterdir():
         if file.suffix==".py":
             wc+=1
-            print(wc," ",file)
+            print(wc," ",file.name)
 
 print(wc)
