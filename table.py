@@ -6,4 +6,4 @@ name=[
      ]
 header=["Name","Rollno","Phone no"]
 
-print(tabulate(name,headers=header,tablefmt="grid"))
+print(tabulate(name,headers=header,tablefmt="html"))
