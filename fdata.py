@@ -4,9 +4,9 @@ n:int=int(input("Enter the number of data: "))
 fake=Faker()
 l= []
 for i in range(n):
-    l.append(fake.name())
-    l.append(fake.email())
-    l.append(fake.phone_number())
+    l.append([fake.name(),
+   fake.email(),
+    fake.phone_number(),])
 
 head=["Name","Email","Phone number"]
 
