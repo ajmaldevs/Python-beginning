@@ -1,3 +1,3 @@
 import os
 path=r"C:\Users\ajumu\Downloads"
-print(os.listdir(path))
+print(f"{os.listdir(path)}\n")
