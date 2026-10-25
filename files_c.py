@@ -1,4 +1,7 @@
 from pathlib import Path
-folder=Path.home()
-print(folder)
-print(folder.exists())
+folder=Path.home()/"Downloads"
+if folder.exists() and folder.is_dir():
+    for file in folder.iterdir():
+        print(file)
+
+        
