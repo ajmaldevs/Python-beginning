@@ -1,4 +1,4 @@
 from pathlib import Path
-folder=Path.home()/"Downloads"
+folder=Path.home()
 print(folder)
 print(folder.exists())
