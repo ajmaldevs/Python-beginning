@@ -12,7 +12,7 @@ def main():
     time.sleep(0.2)
     print(f"Current Directory = {Path.home()}")
     directory:str=input("Enter The Folder You Want: ")
-    folder=Path.home() / directory
+    folder=Path.home() / directory.replace('/','\\')
     data=[]
     suffix(folder,data)
     create(folder,data)
@@ -69,3 +69,8 @@ if __name__=="__main__":
         main()
     except FileNotFoundError:
         sys.exit("File is not founded")
+    except NotADirectoryError:
+        sys.exit("Not a Direcotory")
+    except PermissionError:
+        sys.exit("No Permission")
+
