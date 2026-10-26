@@ -1,3 +1,4 @@
 import os 
-a=os.system("ipconfig")
-print(a)
+command:str=input("Enter the Command to execute: ").lower()
+print(os.system(f"{command}"))
+
