@@ -15,6 +15,7 @@ def main():
     folder=Path.home() / directory.replace('/','\\')
     data=[]
     suffix(folder,data)
+    count(folder)
     create(folder,data)
     time.sleep(2)
     print("File Organised Successfully")
@@ -60,7 +61,20 @@ def create(folder,data):
                  if file.is_file() and file.suffix in [i]:
                     file.rename(directory/file.name)
          
+def count(folder):
+    varble={}
+    for file in folder.iterdir():
+        if file.is_file():
+            ext=file.suffix
+            if ext:
+                varble[ext]=varble.get(ext,1)+1
 
+    for key,values in varble.items():
+        if values > 1:
+            res="Nos"
+        else:
+            res="No"
+        print(f"File Extension {key} : {values} {res}")
 
 
     
