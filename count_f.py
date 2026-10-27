@@ -6,7 +6,7 @@ data=[]
 for files in folder.iterdir():
     data.append(files.suffix)
 
-set(data)
-print(data)
+updated_data=set(data)
+print(updated_data)
     
     
