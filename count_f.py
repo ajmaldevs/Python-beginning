@@ -9,7 +9,8 @@ for file in folder.iterdir():
         if ext:
             varble[ext]=varble.get(ext,1)+1
 
-print(*varble)
+for key,values in varble.items():
+    print(f"File Extension {key} : {values}")
 
 
     
