@@ -59,7 +59,9 @@ def create(folder,data):
 
             for file in folder.iterdir():
                  if file.is_file() and file.suffix in [i]:
-                    file.rename(directory/file.name)
+                    destination=directory/file.name
+                    if file!=destination and not destination.exists(): 
+                        file.rename(destination)
          
 def count(folder):
     varble={}
