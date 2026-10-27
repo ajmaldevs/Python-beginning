@@ -7,6 +7,16 @@ for files in folder.iterdir():
     data.append(files.suffix)
 
 updated_data=set(data)
-print(updated_data)
+variables={}
+for x in updated_data:
+    name=x.lstrip(".")
+    variables[name]=1
+
+    for files in folder.iterdir():
+        ch=files.suffix.lstrip(".")
+        if ch == name:
+            variables[name]+=1
+        print(variables[name])
+
     
     
