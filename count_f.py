@@ -10,7 +10,11 @@ for file in folder.iterdir():
             varble[ext]=varble.get(ext,1)+1
 
 for key,values in varble.items():
-    print(f"File Extension {key} : {values}")
+    if values > 1:
+        res="Nos"
+    else:
+        res="No"
+    print(f"File Extension {key} : {values} {res}")
 
 
     
