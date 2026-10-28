@@ -3,7 +3,8 @@ import sys
 
 def wifi_scan():
     try:
-        result=subprocess.run(["netsh","wlan","show","networks","mode=bsside"],
+        result=subprocess.run(
+                    ["netsh","wlan","show","networks","mode=bssid"],
                        capture_output=True,
                        text=True,
                        check=True
