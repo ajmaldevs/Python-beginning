@@ -9,8 +9,7 @@ os.mkdir(folder)
 print("Folder made successfully..")
 os.chdir(fr"{os.getcwd()}\{folder}")
 file_name:str=input("Enter the file name: ")
-name=os.path.join(folder,file_name)
-with open(name,"w") as f:
+with open(file_name,"w") as f:
     data:str=input("Enter Data inside the file: ")
     f.write(data)
 
