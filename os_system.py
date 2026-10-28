@@ -1,6 +1,5 @@
 #OS library in python
 import os
-os.system("cd ..")
-print(f"Current Working Directory: {os.getcwd()}")
+print(f"Current Working Directory: {os.chdir(r"C:\Users\ajumu\Downloads")}")
 directory:str=input("Enter the Directory: ")
-os.chdir(f"{os.getcwd()}/{directory}")
+os.chdir(fr"{os.getcwd()}\{directory}")
