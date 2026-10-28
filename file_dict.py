@@ -10,8 +10,12 @@ else:
 
 data={}
 num=0
+direc=0
 for file in folder.rglob("*"):
     if file.is_file():
         num+=1
+    if file.is_dir():
+        direc+=1
 
 print(f"Number of Files: {num}")
+print(f"Number of Folder: {direc}")
