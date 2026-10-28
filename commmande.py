@@ -4,7 +4,7 @@ import sys
 def wifi_scan():
     try:
         result=subprocess.run(
-                    ["netsh","wlan","show","networks","mode=bssid"],
+                    ["ipconfig"],
                        capture_output=True,
                        text=True,
                        check=True
