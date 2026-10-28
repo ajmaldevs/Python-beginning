@@ -11,5 +11,6 @@ for file in folder.iterdir():
         destination=folder/file
         file.rename(destination)
         num+=1
+        file.rename(folder)
 
 print(f"Number of Files: {num}")
