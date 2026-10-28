@@ -1,6 +1,6 @@
 #OS library in python
 import os
-import shutil
+import sys
 folder=""
 directory=""
 try:
@@ -17,7 +17,7 @@ try:
         data:str=input("Enter Data inside the file: ")
         f.write(data)
 except Exception:
-    os.chdir(fr"{os.getcwd()}")
-    shutil.rmtree(folder)
+    print("Some Kind of Error Occured")
+    sys.exit()
 else:
     print(f"Program Executed Successfully..")
