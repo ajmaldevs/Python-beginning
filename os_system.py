@@ -17,7 +17,7 @@ try:
         data:str=input("Enter Data inside the file: ")
         f.write(data)
 except Exception:
-    os.chdir(fr"{os.getcwd()}\ {directory}")
+    os.chdir(fr"{os.getcwd()}")
     shutil.rmtree(folder)
 else:
     print(f"Program Executed Successfully..")
