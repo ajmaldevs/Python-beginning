@@ -8,4 +8,6 @@ for file in folder.iterdir():
     if file.is_file():
         num+=1
     else:
-        print(file)
+        destination=folder/file
+        file.rename(destination)
+        num+=1
