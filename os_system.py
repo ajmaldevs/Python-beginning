@@ -2,6 +2,7 @@
 import os
 import shutil
 folder=""
+directory=""
 try:
     os.chdir(r"C:\Users\ajumu\Downloads")
     print(f"Current Working Directory: {os.getcwd()}")
@@ -16,7 +17,7 @@ try:
         data:str=input("Enter Data inside the file: ")
         f.write(data)
 except Exception:
-    os.chdir(r"C:\Users\ajumu\Downloads")
+    os.chdir(fr"{os.getcwd}\ {directory}")
     shutil.rmtree(folder)
 else:
     print(f"Program Executed Successfully..")
