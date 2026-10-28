@@ -3,6 +3,9 @@ directory:str=input("Enter The folder: ").strip()
 print(f"PWD : {Path.home()}")
 folder=Path.home() / directory
 data={}
+num=0
 for file in folder.iterdir():
-    for i in file.name:
-        print(i)
+    if file.is_file():
+        num+=1
+    else:
+        print(file)
