@@ -1,16 +1,17 @@
 from pathlib import Path
-directory:str=input("Enter The folder: ").strip()
+import sys
 print(f"PWD : {Path.home()}")
+directory:str=input("Enter The folder: ").strip()
 folder=Path.home() / directory
+if folder.is_dir():
+    pass
+else:
+    sys.exit("Not a Folder ")
+
 data={}
 num=0
-for file in folder.iterdir():
+for file in folder.rglob("*"):
     if file.is_file():
         num+=1
-    else:
-        destination=folder/file
-        file.rename(destination)
-        num+=1
-        file.rename(folder)
 
 print(f"Number of Files: {num}")
