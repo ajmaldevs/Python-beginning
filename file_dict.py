@@ -2,7 +2,10 @@ from pathlib import Path
 import sys
 print(f"PWD : {Path.home()}")
 directory:str=input("Enter The folder: ").strip()
-folder=Path.home() / directory
+if directory:
+    folder=Path.home() / directory
+else:
+    folder=Path.home()
 if folder.is_dir():
     pass
 else:
