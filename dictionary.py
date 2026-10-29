@@ -3,8 +3,8 @@ data={}
 while True:
     name:str=input("Enter your name: ").title()
     place:str=input("Enter Your place: ").title()
-    std:int=int(input("Enter Your phone number: "))
-    if not name or not place or not std:
+    std:str=(input("Enter Your phone number: "))
+    if name=="":
         break 
     data={
         "name":name,
