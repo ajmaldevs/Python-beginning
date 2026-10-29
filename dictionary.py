@@ -4,7 +4,7 @@ while True:
     name:str=input("Enter your name: ").title()
     place:str=input("Enter Your place: ").title()
     std:int=int(input("Enter Your phone number: "))
-    if not name or place or std:
+    if not name or not place or not std:
         break 
     data={
         "name":name,
@@ -12,12 +12,12 @@ while True:
         "phno":std
     }
 
-for key,value in data.items():
+if data:
     print(f"""
             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             ~~~~~~~~~~~~~~~~~~~~~~~~ STUDENT DETAILS ~~~~~~~~~~~~~~~~~~~~~~~~~~
-            Name: {data["name"]}
-            Place: {data["place"]}
+            Name: {data['name']}
+            Place: {data['place']}
             Phone number : {data['phno']}
 
             ####################################################################
