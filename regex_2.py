@@ -1,6 +1,6 @@
 import re
 name:str=input("Enter Your name: ").title()
-pattern=r"^([\w]+)\s([\w])+"
+pattern=r"^([\w]+)\s([\w]+)"
 res = re.search(pattern,name)
 if res:
     print(f"First Name : {res.group(1)}")
