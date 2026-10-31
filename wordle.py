@@ -1,5 +1,4 @@
 #Word game
-from tabulate import tabulate
 print("Enter a word...")
 q1:str=input("Player 1? ")
 q2:str=input("Player 2? ")
@@ -32,8 +31,6 @@ data = {
     "y": 4,
     "z": 10
 }
-print("Score Card..")
-print(tabulate(data,tablefmt="grid"))
 t1=0
 t2=0
 for letter in q1:
