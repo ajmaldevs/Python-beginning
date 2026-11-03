@@ -7,7 +7,7 @@ try:
     temp=num
     while num>0:
         r=num%10
-        Asum=r*r*r
+        Asum+=r*r*r
         sum+=num%10
         num//=10
 
